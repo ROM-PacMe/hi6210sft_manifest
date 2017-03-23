@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="pacme"
+           fetch="https://github.com/ROM-PacMe" />
+
+  <remote  name="private"
+           fetch="ssh://git@github.com" />
+	
+  <default revision="refs/heads/aosp-6.0"
+           remote="pacme"
+           sync-c="true"
+           sync-j="4" />
+
+  <!-- HiSilicon Kirin 620 Vendor & Kernel Tree -->
+
+  <project path="kernel_hisilicon" name="android_kernel_hisi_hi6210sft" remote="pacme" />
+  <project path="vendor/hisi" name="android_vendor_hisi_hi6210sft" remote="pacme">
+
+</manifest>
